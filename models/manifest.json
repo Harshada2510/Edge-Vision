@@ -1,0 +1,126 @@
+{
+  "fastestdet": {
+    "size": 352,
+    "input": "input.1",
+    "outputs": [
+      "758"
+    ],
+    "threshold": 0.65,
+    "nms": 0.45,
+    "source_path": "research_fastestdet/example/ncnn/FastestDet",
+    "source_commit": "50473cd155cb088aa4a99e64ff6a4b3c24fa07e1",
+    "source_url": "https://github.com/dog-qiuqiu/FastestDet.git",
+    "param": "fastestdet.param",
+    "param_sha256": "bfbc58d7e6c1ffef642d818fbc1b4fe17bb18f25c5942f3d12a54aa4b163bd9e",
+    "bin": "fastestdet.bin",
+    "bin_sha256": "ba0d5da71d9f0179f45c785fb7c04651f651f2a9eafd4e0abe57571bfb1a7e0c"
+  },
+  "trilitenet-tiny-320": {
+    "size": 320,
+    "height": 192,
+    "input": "in0",
+    "outputs": [
+      "out0",
+      "out1",
+      "out2",
+      "out3",
+      "out4"
+    ],
+    "threshold": 0.25,
+    "nms": 0.45,
+    "anchors": [
+      [
+        [
+          [
+            [
+              [
+                4.3609819412231445,
+                11.885577201843262
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                6.493203639984131,
+                18.534900665283203
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                10.325193405151367,
+                26.905885696411133
+              ]
+            ]
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            [
+              [
+                16.26682472229004,
+                38.901573181152344
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                24.7628116607666,
+                58.12147521972656
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                39.82725143432617,
+                86.59107971191406
+              ]
+            ]
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            [
+              [
+                56.54350280761719,
+                138.85464477539062
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                80.46833801269531,
+                198.1024932861328
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                123.45246887207031,
+                309.0478515625
+              ]
+            ]
+          ]
+        ]
+      ]
+    ],
+    "heads": "all",
+    "experimental": true,
+    "source_url": "https://github.com/chequanghuy/TriLiteNet",
+    "source_commit": "4ac49477ff73dc9f45497ad4c397e92e6089436b",
+    "param": "trilitenet-tiny-320.param",
+    "param_sha256": "cf8132c40599253e6bfde89f700ba5013d3d96725bf4c7653bd675bc775f4df5",
+    "bin": "trilitenet-tiny-320.bin",
+    "bin_sha256": "33573e603ff5c1bc1ec469d5a03b3f6e8db76e020eb01707f3dc979f0b467de2"
+  }
+}

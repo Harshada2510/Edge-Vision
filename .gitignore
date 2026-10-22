@@ -1,0 +1,47 @@
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Downloaded packages and environment
+*.whl
+.env
+
+# Video and datasets
+*.mp4
+*.avi
+*.mov
+
+# Exported weights; only the two reviewed NCNN model pairs are versioned
+*.pt
+*.onnx
+*.engine
+*.tflite
+*.weights
+*.bin
+*.param
+!models/fastestdet.bin
+!models/fastestdet.param
+!models/trilitenet-tiny-320.bin
+!models/trilitenet-tiny-320.param
+*_ncnn_model/
+runs/
+Ultralytics/
+
+# Generated outputs and local measurements
+results/
+*.log
+*.tmp
+config/calibration.json
+config/ego_speed.json
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,12 @@
+{
+  "mode": "pinhole_ground",
+  "quality": "estimated",
+  "image_size": [1280, 720],
+  "camera_matrix": [[800.0, 0.0, 640.0], [0.0, 800.0, 360.0], [0.0, 0.0, 1.0]],
+  "height_m": 1.5,
+  "pitch_deg": 1.4,
+  "origin": "ground directly below camera",
+  "max_distance_m": 60.0,
+  "max_contact_y_fraction": 0.92,
+  "reference": "Provisional 1280x720 Pexels 31901298 video geometry; only the vanishing point near (640,341) was estimated from road lines. Focal length and height are illustrative assumptions; lens distortion, camera mount, and absolute scale have not been measured."
+}

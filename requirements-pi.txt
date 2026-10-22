@@ -1,0 +1,4 @@
+# Tested configuration targets Raspberry Pi OS Lite 64-bit (Trixie, CPython 3.13).
+# Install this wheel with --no-deps; NCNN's declared opencv-python dependency
+# would otherwise download a second, oversized pip OpenCV onto the Pi.
+ncnn==1.0.20260526

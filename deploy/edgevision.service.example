@@ -1,0 +1,21 @@
+[Unit]
+Description=EdgeVision browser demo on Raspberry Pi
+After=network.target
+
+[Service]
+Type=simple
+User=CHANGE_ME
+WorkingDirectory=/home/CHANGE_ME/EdgeVision
+Environment=OPENBLAS_NUM_THREADS=1
+Environment=OMP_NUM_THREADS=3
+ExecStart=/home/CHANGE_ME/EdgeVision/.venv/bin/python main.py --video /home/CHANGE_ME/drive.mp4 --realtime --loop --threads 3 --hud-style compact --stream-fps 10 --jpeg-quality 70 --host 0.0.0.0
+# For a CSI camera, replace the ExecStart above with:
+# ExecStart=/home/CHANGE_ME/EdgeVision/.venv/bin/python main.py --picamera --threads 3 --hud-style compact --stream-fps 10 --jpeg-quality 70 --host 0.0.0.0
+Restart=on-failure
+RestartSec=3
+MemoryAccounting=yes
+MemoryHigh=500M
+MemoryMax=700M
+
+[Install]
+WantedBy=multi-user.target

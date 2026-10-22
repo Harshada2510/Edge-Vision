@@ -1,0 +1,8 @@
+{
+  "measured": false,
+  "origin": "Describe the ground point directly below the camera here",
+  "image_size": [1280, 720],
+  "image_points": [null, null, null, null],
+  "ground_points_m": [null, null, null, null],
+  "lens_corrected": false
+}
